@@ -1,8 +1,9 @@
 # final-project-mockup
 
-Colors are definitely subject to change. Images are placeholders (will probably be pictures of the website).
+Colors are definitely subject to change. All Javascript and some page links need to be implemented properly.
 
 ## Landing Page
+Images are placeholders (will probably be pictures of the website). Layout may change as well.
 ![](doc/mockup-1.png)
 ![](doc/mockup-2.png)
 
