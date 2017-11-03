@@ -44,3 +44,5 @@ Template.Filter_Page.events({
   },
 });
 
+$('#multi-select')
+    .dropdown();

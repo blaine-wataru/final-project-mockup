@@ -2,15 +2,81 @@
   {{#if Template.subscriptionsReady}}
     <div style="margin-top: 10px" class="ui container">
 
+      <div class = "ui grid">
+        <div class = "ui four wide column">
+          <h3>
+            <div class="ui multiple search selection dropdown">
+              <input type="hidden" name="game">
+              <i class="dropdown icon"></i>
+              <div class="default text">Game</div>
+            <div class="menu">
+              <div class="item" data-value="lol">League of Legends</div>
+              <div class="item" data-value="ow">Overwatch</div>
+              <div class="item" data-value="csgo">Counterstrike: Global Offensive</div>
+              <div class="item" data-value="pubg">PlayerUnknown's Battlegrounds</div>
+            </div>
+            </div>
+          </h3>
+        </div>
+
+        <div class = "ui four wide column">
+          <h3>
+            <div class="ui multiple search selection dropdown">
+              <input type="hidden" name="style">
+              <i class="dropdown icon"></i>
+              <div class="default text">Gameplay Style</div>
+              <div class="menu">
+                <div class="item" data-value="casual">Casual</div>
+                <div class="item" data-value="comp">Competitive</div>
+              </div>
+            </div>
+          </h3>
+        </div>
+
+        <div class = "ui four wide column">
+          <h3>
+            <div class="ui multiple search selection dropdown">
+              <input type="hidden" name="avail">
+              <i class="dropdown icon"></i>
+              <div class="default text">Availability</div>
+              <div class="menu">
+                <div class="item" data-value="morning">Mornings</div>
+                <div class="item" data-value="night">Nights</div>
+              </div>
+            </div>
+          </h3>
+        </div>
+
+        <div class = "ui four wide column">
+          <h3>
+            <div class="ui multiple search selection dropdown">
+              <input type="hidden" name="platform">
+              <i class="dropdown icon"></i>
+              <div class="default text">Platform</div>
+              <div class="menu">
+                <div class="item" data-value="ps4">PS4</div>
+                <div class="item" data-value="pc">PC</div>
+              </div>
+            </div>
+          </h3>
+        </div>
+
+      </div>
+
+      <!--
       <form class="ui equal width form filter-data-form">
         <div class="field">
           {{> Select_Form_Control label="Interests" options=interests multiple=true }}
         </div>
         <button class="ui teal button" type="submit">Filter</button>
       </form>
+-->
+
+      <button class="ui right floated teal button" type="submit">Search</button>
 
       {{> Filter_Page_Directory profiles=profiles }}
 
     </div>
   {{/if}}
 </template>
+
